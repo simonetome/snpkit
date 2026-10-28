@@ -36,7 +36,8 @@ class GTExClient(BaseAPIClient):
             raw = self._get(self.base_url+'dataset/variant', params={"snpId": snp_id})
         except: # variant has not been found
             raw = None
-
+        
+        # TODO fix
         return self.parse(raw)
          
 

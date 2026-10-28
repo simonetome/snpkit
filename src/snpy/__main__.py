@@ -2,8 +2,11 @@ import json
 import requests
 
 from .eqtl import get_variant, get_eqtl
+from .phewas import get_assoc_by_gene
 import polars as pl
 import argparse
+
+from time import sleep
 
 """
 parser = argparse.ArgumentParser(description="Compute EFO/HPO embedding similarity")
@@ -31,7 +34,6 @@ print(args.model)
 print(args.top_k)
 print(args.tissues)
 """
-
 with open("test/data/best_snps.txt","r") as f:
     snps = [line.strip() for line in f]
 
@@ -45,5 +47,4 @@ if __name__ == "__main__":
     
     data = get_eqtl(snps)
     print(data)
-    data.write_csv("test/output/best_snps.csv")
-
+    data.write_csv("test/output/best_snpsdeepheno.csv")

@@ -1,4 +1,4 @@
-from .gtex_client import GTExClient
+from .api_clients.gtex_client import GTExClient
 from .exception_utils import get_exception
 from .config import gtex_tissues
 # variable for tissues id in GTEx
