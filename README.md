@@ -1,4 +1,4 @@
-# 🧬🐍 SnPy 🐍🧬 
+# SnpKit 🛠️🧬 
 
 TODO
 
