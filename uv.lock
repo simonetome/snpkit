@@ -1804,7 +1804,7 @@ wheels = [
 ]
 
 [[package]]
-name = "snpy"
+name = "snpkit"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
